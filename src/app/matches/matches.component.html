@@ -1,0 +1,14 @@
+<h1>Matches</h1>
+
+<ul>
+  <li *ngFor="let match of matches$" [class.runningMatch]="match.status == 'RUNNING'">
+    <a [class.runningMatch]="match.status == 'RUNNING'" routerLink="/details/{{match.id}}">{{ match.tournament }}</a>
+
+    <ul [class.runningMatch]="match.status == 'RUNNING'">
+      <li [class.runningMatch]="match.status == 'RUNNING'"><a [class.runningMatch]="match.status == 'RUNNING'" routerLink="/team/{{match.team1}}">{{ match.team1 }} </a></li>
+      <li [class.runningMatch]="match.status == 'RUNNING'"><a [class.runningMatch]="match.status == 'RUNNING'" routerLink="/team/{{match.team2}}">{{ match.team2 }} </a></li>
+      <li [class.runningMatch]="match.status == 'RUNNING'"><a [class.runningMatch]="match.status == 'RUNNING'" routerLink="/team/{{match.team3}}">{{ match.team3 }} </a></li>
+      <li [class.runningMatch]="match.status == 'RUNNING'"><a [class.runningMatch]="match.status == 'RUNNING'" routerLink="/team/{{match.team4}}">{{ match.team4 }} </a></li>
+    </ul>
+  </li>
+</ul>

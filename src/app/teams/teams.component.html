@@ -1,0 +1,8 @@
+<h1>Teams</h1>
+
+<ul>
+  <li *ngFor="let team of teams$">
+    <a routerLink="/team/{{team.name}}">{{ team.name }}</a>
+    <img src="{{team.logo}}"/>
+  </li>
+</ul>
